@@ -1,0 +1,48 @@
+[
+    {
+        "id":1,
+        "nombre":"Birra roja", 
+        "precio": 380, 
+        "stock": 60,
+        "img":"birra roja.jpg"
+        
+    },
+    {
+        "id":2,
+        "nombre":"chetos hot", 
+        "precio": 190, 
+        "stock": 20,
+        "img":"chetos hot.jpg"
+       
+    },
+    {
+        "id":3,
+        "nombre":"monster", 
+        "precio": 210, 
+        "stock": 50,
+        "img":"monster1.jpg"
+      
+    },
+    {
+        "id":4,
+        "nombre":"chocolate", 
+        "precio": 270, 
+        "stock": 30,
+        "img":"chocolate1.jpg"
+    },
+    {
+        "id":5,
+        "nombre":"Manaos", 
+        "precio": 190, 
+        "stock": 100,
+        "img": "MANAOS-UVA-1,25LTS.jpg"
+    },
+    {
+        "id":6,
+        "nombre":"coca-ligth", 
+        "precio": 110, 
+        "stock": 10,
+        "img":"coca-light.webp"
+    }
+   
+]

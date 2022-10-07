@@ -1,0 +1,9 @@
+.divGral{
+background-color: aqua;
+color: grey;
+}
+.cardProducto {
+    width:20rem;
+    margin: 4px;
+    background-color: pink;
+}
