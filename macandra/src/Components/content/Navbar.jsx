@@ -2,6 +2,7 @@ import React from 'react';
 import Form from '../layouts/form';
 import Dropdow from '../layouts/Dropdow';
 import Secciones from '../layouts/Secciones';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
    const listDrowdon = ["Hombres", "Mujeres", "Niños", "Bebes"]
     return (
@@ -15,8 +16,11 @@ const Navbar = () => {
         <Secciones/>
         <Dropdow lista={listDrowdon}/>
       </ul>
-     <Form busqueda='buscar producto'/>
+        
     </div>
+        <ul>
+          <Link className="nav-link" to='carrito'>🛒</Link>
+        </ul>
   </div>
 </nav>
 

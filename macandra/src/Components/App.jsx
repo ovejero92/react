@@ -3,10 +3,10 @@ import '../styles/App.css'
 import Navbar from './content/Navbar';
 import Carrito from './content/Carrito';
 import Home from './content/Home';
-import Producto from './content/Producto';
-import DetalleProducto from './content/DetalleProducto';
-import Contacto from './content/Contacto';
 import About from './content/about';
+import Contacto from './content/Contacto';
+import Producto from './content/Producto';
+import Footer from './content/Footer';
 
 const App = () => {
     return (
@@ -15,12 +15,13 @@ const App = () => {
    <BrowserRouter>
      <Navbar/>
      <Routes>
-        <Route path="/" elemento={<Home/>} />
-        <Route path="/Producto" elemento={<Producto/>} />
-        <Route path="/about" elemento={<About/>} />
-        <Route path="/contato" elemento={<Contacto/>} />
-        <Route path="/Carrito" elemento={<Carrito/>} />
+       <Route path='/' element={<Home/>} />
+       <Route path='/Producto/:id' element={<Producto/>} />
+       <Route path='/about' element={<About/>} />
+       <Route path='/contacto' element={<Contacto/>} />
+       <Route path='/carrito' element={<Carrito/>} />
      </Routes>
+     <Footer/>
    </BrowserRouter>
         </>
     );
