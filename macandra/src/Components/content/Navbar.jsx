@@ -19,7 +19,7 @@ const Navbar = () => {
         
     </div>
         <ul>
-          <Link className="nav-link" to='carrito'>🛒</Link>
+          <Link className="nav-link" to='carrito'><button className='btn btn-dark'><i class="fa-solid fa-cart-shopping"></i></button></Link>
         </ul>
   </div>
 </nav>

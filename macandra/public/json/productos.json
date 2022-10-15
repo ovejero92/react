@@ -12,7 +12,7 @@
         "nombre":"chetos hot", 
         "precio": 190, 
         "stock": 20,
-        "img":"https://www.cheetos.com/sites/cheetos.com/files/2019-02/Cheetos%20Crunchy%20Flamin%27%20Hot_1.png"
+        "img":"https://5.imimg.com/data5/XC/DR/KS/SELLER-4880510/imported-fritolay-cheetos-flaming-hot-flamin-hot-chips-226-8g-1000x1000.jpg"
        
     },
     {
@@ -20,7 +20,7 @@
         "nombre":"monster", 
         "precio": 210, 
         "stock": 50,
-        "img":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcbd3flynb21MsXtFBGVTZIhmjYxLsPF97SgoT-fjRm4gRvEOh"
+        "img":"https://images.rappi.com.ar/products/25c43d5d-351d-4dbd-bd20-e4a15cf1012d.jpg"
       
     },
     {
@@ -28,21 +28,21 @@
         "nombre":"chocolate", 
         "precio": 270, 
         "stock": 30,
-        "img":"https://http2.mlstatic.com/D_NQ_NP_857072-MLA42196330854_062020-O.jpg"
+        "img":"https://http2.mlstatic.com/D_NQ_NP_715552-MLA49776152292_042022-V.jpg"
     },
     {
         "id":5,
         "nombre":"Manaos", 
         "precio": 190, 
         "stock": 100,
-        "img": "https://http2.mlstatic.com/D_NQ_NP_885873-MLA43472148009_092020-O.webp"
+        "img": "http://escuadrongaseosa.com.ar/productos/app/web/upload/medium/1113_1e2c690053816f88a2a96ca56eb73adb.jpg"
     },
     {
         "id":6,
         "nombre":"coca-ligth", 
         "precio": 110, 
         "stock": 10,
-        "img":"https://carrefourar.vtexassets.com/arquivos/ids/220142/7790895001482_02.jpg?v=637704294107530000"
+        "img":"https://http2.mlstatic.com/D_Q_NP_987651-MLA48521975394_122021-AB.webp"
     }
    
 ]
