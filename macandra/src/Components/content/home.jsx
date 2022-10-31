@@ -1,28 +1,36 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
+import { getProductos } from '../../utils/firebase';
+import { DarkModeContext } from '../../context/darkModeContext';
+import { Link } from 'react-router-dom'
+
+
 
 const Home = () => {
     const [Productos, setProductos] = useState([]);
+
+    const { darkMode} = useContext(DarkModeContext);
     useEffect(() => {
-        const consultarBDD = async () => {
-        const response = await fetch('./json/productos.json')
-        const productos = await response.json()
-        const cardProduto = productos.map(producto =>
-            <div className="card cardProducto" key={producto.id} >
-  <img src={producto.img} className="card-img-top" alt={producto.nombre}/>
+        
+      getProductos().then(Productos => { 
+        const cardProduto = Productos.map(Producto =>
+          <div className="card cardProducto" key={Producto[0]} >
+  <img src={Producto[1].img} className="card-img-top" alt={Producto.nombre}/>
   <div className="card-body">
-    <h5 className="card-title">{producto.nombre}</h5>
-    <p className="card-text">{producto.nombre}</p>
-    <p className="card-text">Precio: ${producto.precio}</p>
-    <p className="card-text">Stock:{producto.stock}</p>
-    <button className='btn btn-dark'>ver producto</button>
+  <h5 className="card-title">{Producto[1].nombre}</h5>
+  <p className="card-text">{Producto[1].nombre}</p>
+  <p className="card-text">Precio: ${Producto[1].precio}</p>
+  <p className="card-text">Stock:{Producto[1].stock}</p>
+  <button className='btn btn-dark'><Link className='nav-link' to={`/producto/${Producto[0]}`}>Ver producto</Link></button>
   </div>
-</div>)
-return cardProduto
-}
-      consultarBDD() .then(producto => setProductos(producto))
+  </div>)
+        
+        setProductos(cardProduto)
+      })
     }, []);
+
     return (
-        <div className='row'>
+        <div className={darkMode ? 'darkMode row' : 'row'}>
+       
           {Productos}  
         </div>
     );

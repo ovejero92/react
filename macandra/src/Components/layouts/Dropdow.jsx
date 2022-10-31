@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 const Dropdow = ({lista}) => {
     return (
@@ -6,11 +6,12 @@ const Dropdow = ({lista}) => {
          <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-chevron-square-down"></i></a>
           <div className="dropdown-menu">
-            <a className="dropdown-item" href="#">{lista[0]}</a>
-            <a className="dropdown-item" href="#">{lista[1]}</a>
-            <a className="dropdown-item" href="#">{lista[2]}</a>
-            <div className="dropdown-divider" />
-            <a className="dropdown-item" href="#">{lista[3]}</a>
+       
+    <Link className='dropdown-item' to={`/categoria/1`}>{lista[0]}</Link>
+    <Link className='dropdown-item' to={`/categoria/2`}>{lista[1]}</Link>
+    <Link className='dropdown-item' to={`/categoria/3`}>{lista[2]}</Link>
+         
+       
           </div>
         </li>   
         </>

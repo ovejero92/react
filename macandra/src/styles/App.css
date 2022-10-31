@@ -1,13 +1,239 @@
+:root {
+  --facebook: #3b5999;
+  --instagram: #e4405f;
+  --twitter: #55acee;
+  --pinterest: #bd081c;
+  --linkedin: #0066b5;
+}
+
+footer ul li {
+  text-decoration-style: none;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 5px;
+  font-size: 20px;
+}
+
 .divGral{
+    margin: 100%;
 background-color: aqua;
 color: grey;
 }
 .cardProducto {
+    
     width:20rem;
-    margin: 4px;
-    background-color: pink;
+    height:auto;
+    margin:20px;
+    background-color: rgba(200, 200, 33, 0.542);
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px 2px;
 }
 .cardProducto > img {
-    width: 90%;
+    width: 75%;
     height: 250px;
+    margin: 7px 0px 0px 37px;
 }
+.darkMode {
+    background-color: black;
+    color: white;
+    
+}
+.Section{
+    display: flex;
+  font-size: 30px;
+    margin:0px 100px;
+    padding: 0px 100px;
+
+}
+.header__contenedor {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    text-transform: uppercase; 
+    justify-content: space-between;
+   background-color: black;
+   }
+   .stile {
+     width: 100%;
+     max-width: 1440px;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+   }
+ .bx.bx-menu {
+     display: none;
+     font-size: 40px;
+   }
+   
+ 
+ .nav ul {
+     display: flex;
+     align-items: center;
+     gap: 45px;
+     list-style-type: none;
+   }
+   
+   .modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+  }
+  .modal-container::-webkit-scrollbar {
+    display: none;
+  }
+   .modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: #fff;
+    width: 100%;
+  }
+  .modal-header-title {
+    justify-self: start;
+    color: #fff;
+  }
+  .modal-header-button {
+    cursor: pointer;
+  }
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    width: 70%;
+    margin: 10px;
+    font-size: 60px;
+    color: white;
+  }
+  .modal-content h5 {
+    font-size: 70px;
+    color: white;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  .modal-container > div > img {
+    height: 120px;
+    max-width: 120px;
+  }
+  .cantidad-carrito {
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+  }
+  .Form{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+  }
+  .Form h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: green;
+  }
+  .control{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    border: 2px solid #1f53c5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+  }
+  .Form p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .Form a {
+    color:white;
+    text-decoration: none;
+  }
+  .BotonCompra {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px opx;
+    
+  }
+  .shop-contents {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    }
+    .redes-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .redes-container ul li {
+      display: inline-block;
+      margin: 0 5px;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+    }
+    .redes-container a {
+      display: block;
+      padding: 0 10px;
+      background-color: #333;
+      color: #fff;
+      line-height: 50px;
+      font-size: 18px;
+      box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+    .redes-container :hover a {
+      filter: blur(2px);
+    }
+    
+    .redes-container ul li a:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+      filter: none;
+    }
+    
+    .redes-container ul li .facebook:hover {
+      background: var(--facebook);
+    }
+    
+    .redes-container ul li .instagram:hover {
+      background: var(--instagram);
+    }
+    
+    .redes-container ul li .twitter:hover {
+      background: var(--twitter);
+    }
+    
+    .redes-container ul li .pinterest:hover {
+      background: var(--pinterest);
+    }
+    
+    .redes-container ul li .linkedin:hover {
+      background: var(--linkedin);
+    }

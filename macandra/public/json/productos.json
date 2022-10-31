@@ -1,48 +1,54 @@
 [
     {
         "id":1,
+        "idCategoria":1,
         "nombre":"Birra roja", 
         "precio": 380, 
         "stock": 60,
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYDt2KJ0_lHjH5q4EaNaEthgdmU2Hw1SiaIFBKOV3VR857Gixl"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-34755-2022-8b29e.appspot.com/o/imagenes%2Fbirra%20roja.jpg?alt=media&token=23b574ca-83a7-4d01-8c62-c723c415bd6b"
         
     },
     {
         "id":2,
+        "idCategoria":2,
         "nombre":"chetos hot", 
         "precio": 190, 
         "stock": 20,
-        "img":"https://5.imimg.com/data5/XC/DR/KS/SELLER-4880510/imported-fritolay-cheetos-flaming-hot-flamin-hot-chips-226-8g-1000x1000.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-34755-2022-8b29e.appspot.com/o/imagenes%2Fchetos%20hot.jpg?alt=media&token=26665d7d-9705-4f7f-b90d-defe6883bf22"
        
     },
     {
         "id":3,
+        "idCategoria":1,
         "nombre":"monster", 
         "precio": 210, 
         "stock": 50,
-        "img":"https://images.rappi.com.ar/products/25c43d5d-351d-4dbd-bd20-e4a15cf1012d.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-34755-2022-8b29e.appspot.com/o/imagenes%2Fmonster1.jpg?alt=media&token=e588434a-1304-49fe-b33b-a703809aafa4"
       
     },
     {
         "id":4,
+        "idCategoria":3,
         "nombre":"chocolate", 
         "precio": 270, 
         "stock": 30,
-        "img":"https://http2.mlstatic.com/D_NQ_NP_715552-MLA49776152292_042022-V.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-34755-2022-8b29e.appspot.com/o/imagenes%2Fchocolate3.png?alt=media&token=9a4d9537-7c23-4064-b066-5ea27ede3dea"
     },
     {
         "id":5,
+        "idCategoria":1,
         "nombre":"Manaos", 
         "precio": 190, 
         "stock": 100,
-        "img": "http://escuadrongaseosa.com.ar/productos/app/web/upload/medium/1113_1e2c690053816f88a2a96ca56eb73adb.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-34755-2022-8b29e.appspot.com/o/imagenes%2FMANAOS-UVA-1%2C25LTS.jpg?alt=media&token=067d8b9a-9f9a-4809-910a-fd37760add84"
     },
     {
         "id":6,
+        "idCategoria":1,
         "nombre":"coca-ligth", 
         "precio": 110, 
         "stock": 10,
-        "img":"https://http2.mlstatic.com/D_Q_NP_987651-MLA48521975394_122021-AB.webp"
+        "img":"https://firebasestorage.googleapis.com/v0/b/react-34755-2022-8b29e.appspot.com/o/imagenes%2Fcoca-light.webp?alt=media&token=83502cd7-4c5f-4cdd-84d3-0b43767e3095"
     }
    
 ]

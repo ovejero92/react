@@ -4,25 +4,22 @@ import Dropdow from '../layouts/Dropdow';
 import Secciones from '../layouts/Secciones';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
-   const listDrowdon = ["Hombres", "Mujeres", "Niños", "Bebes"]
+   const listDrowdon = ["bebidas", "snacks", "chocolates",]
     return (
         <>
-             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div className="container-fluid">
-
-    
-    <div className="collapse navbar-collapse" id="navbarColor02">
-      <ul className="navbar-nav me-auto">
+          <header className="header__contenedor">
+  <div className="stile">
+    <h1>Distri India</h1>
+    <nav className="nav">
+      <ul>
         <Secciones/>
         <Dropdow lista={listDrowdon}/>
+        <Link className="nav-link" to='carrito'><button className='btn btn-dark'><i class="fa-solid fa-cart-shopping"></i></button><span className='cantidad-carrito'></span></Link>
       </ul>
-        
-    </div>
-        <ul>
-          <Link className="nav-link" to='carrito'><button className='btn btn-dark'><i class="fa-solid fa-cart-shopping"></i></button></Link>
-        </ul>
+    </nav>
+    <i className="bx bx-menu" />
   </div>
-</nav>
+</header>
 
         </>
     );
